@@ -7,11 +7,9 @@ import com.shyloostyle.exceptionhandling.model.Customer;
 import com.shyloostyle.exceptionhandling.repository.CustomerRepository;
 import com.shyloostyle.exceptionhandling.service.CustomerService;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.boot.model.source.internal.hbm.AttributesHelper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
 @Service
