@@ -70,4 +70,21 @@ public class ProductController {
     private void saveProduct(Product existingProduct) {
         System.out.println("product Saved: "+existingProduct);
     }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Product> deleteProduct(@PathVariable Integer id){
+        ResponseEntity<Product> productById = getProductById(id);
+        if (productById.getStatusCode() == HttpStatus.OK){
+            Product existing = productById.getBody();
+            if (existing != null){
+                deleteProductById(id);
+                return new ResponseEntity<>(existing,HttpStatus.OK);
+            }
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    private void deleteProductById(Integer id) {
+        System.out.println("Product Deleted: "+id);
+    }
 }
