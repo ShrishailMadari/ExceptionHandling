@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shyloostyle</groupId>
-	<artifactId>ProductRest-Api</artifactId>
+	<artifactId>Rest-Consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ProductRest-Api</name>
-	<description>spring boot rest product for Producer</description>
+	<name>Rest-Consumer</name>
+	<description>Rest Consumer using Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -34,13 +34,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -48,11 +41,6 @@
 			<version>2.7.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
